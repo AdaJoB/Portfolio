@@ -1,3 +1,49 @@
-<h1>
-    hello world
-</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>hello</title>
+
+    <!--TODO Implement Global CSS-->
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            /* font-weight: 500; */
+            margin: 0 0.5rem;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/placeholder.png" height="30" alt="AB">
+        </nav>
+
+        <nav>
+            <img src="{{ url_for('static', filename='images/placeholder.png') }}" height="30" alt="Theme">
+            <img src="{{ url_for('static', filename='images/placeholder.png') }}" height="30" alt="Music">
+            <a href="https://github.com/AdaJoB">
+                <img src="{{ url_for('static', filename='images/github-mark.png') }}" height="30" alt="github">
+            </a>
+            <a href="https://www.startpage.com">About Me</a>
+            <a href="https://www.startpage.com">Projects</a>
+            <a href="https://www.startpage.com">Contact</a>
+            
+        </nav>
+
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

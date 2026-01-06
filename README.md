@@ -8,8 +8,8 @@
  - [x] Setup Python virtual environment
 
 ### HTML CSS Foundation
- - [ ] Create a wireframe and design
- - [ ] Create a base.html
+ - [x] Create a wireframe and design
+ - [x] Create a base.html
  - [ ] Finish more static pages
  - [ ] Link CSS
  - [ ] Write global CSS
