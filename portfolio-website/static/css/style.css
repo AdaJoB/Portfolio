@@ -1,0 +1,54 @@
+/* Upload Font */
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("/static/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Global Styling */
+body {
+    background-color: black;
+}
+
+html {
+    font-family: "JetBrainsMono", sans-serif;
+}
+
+h1, h2, h3 {
+    color: hotpink;
+}
+
+p {
+    color: white;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+nav a, nav p {
+    text-decoration: none;
+    color: hotpink;
+    /* font-weight: 500; */
+    margin: 0 0.5rem;
+}
+.nav-right ul {
+    display: flex;
+    list-style: none;      /* removes bullets */
+    margin: 0;
+    padding: 0;
+    gap: 1rem;             /* spacing between items */
+}
+.nav-left p {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;             /* spacing between items */
+}
+
+/* Hero Styling */
+

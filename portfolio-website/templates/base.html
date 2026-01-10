@@ -3,47 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>hello</title>
+    <title>Ada Boddicker</title>
 
-    <!--TODO Implement Global CSS-->
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
 
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem 1rem;
-        }
-        nav a {
-            text-decoration: none;
-            color: #000000;
-            /* font-weight: 500; */
-            margin: 0 0.5rem;
-        }
-        </style>
 </head>
 
-<body>
+<body> 
     <header>
-        <nav>
-            <img src="images/placeholder.png" height="30" alt="AB">
+        <nav class="nav-left">
+            <p>AB</p>
         </nav>
 
-        <nav>
-            <img src="{{ url_for('static', filename='images/placeholder.png') }}" height="30" alt="Theme">
-            <img src="{{ url_for('static', filename='images/placeholder.png') }}" height="30" alt="Music">
-            <a href="https://github.com/AdaJoB">
-                <img src="{{ url_for('static', filename='images/github-mark.png') }}" height="30" alt="github">
-            </a>
-            <a href="https://www.startpage.com">About Me</a>
-            <a href="https://www.startpage.com">Projects</a>
-            <a href="https://www.startpage.com">Contact</a>
-            
+        <nav class="nav-right">
+            <ul>
+                <li><a href="https://github.com/AdaJoB">GitHub</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-
     </header>
-    
+
     <main>
-        {% block content %}{% endblock %}
+        <section id="hero">{% include "_hero.html" %}</section>
+        <section id="about">{% include "_about.html" %}</section>
+        <section id="projects">{% include "_projects.html" %}</section>
+        <section id="contact">{% include "_contact.html" %}</section>
     </main>
 </body>
 </html>

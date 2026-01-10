@@ -1,8 +1,12 @@
-# python virtual environment
+# ignore python virtual environment
 .venv/
 
-# drawio files
+# ignore drawio files
 *.drawio
 
-# temp
+# ignore placeholders
 placeholder.*
+
+# ignore unused fonts
+*woff2
+!JetBrainsMono-Regular.woff2
