@@ -11,6 +11,7 @@
 </head>
 
 <body> 
+    <!--header display-->
     <header>
         <nav class="nav-left">
             <p>AB</p>
@@ -18,6 +19,8 @@
 
         <nav class="nav-right">
             <ul>
+                <!--TODO - create download for resume pdf-->
+                <li><p>Resume</p></li>
                 <li><a href="https://github.com/AdaJoB">GitHub</a></li>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -27,11 +30,8 @@
         </nav>
     </header>
 
-    <main>
-        <section id="hero">{% include "_hero.html" %}</section>
-        <section id="about">{% include "_about.html" %}</section>
-        <section id="projects">{% include "_projects.html" %}</section>
-        <section id="contact">{% include "_contact.html" %}</section>
-    </main>
+    <!--sections displayed from index.html-->
+    <main>{% block content %}{% endblock %}</main>
+
 </body>
 </html>

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {%include "_hero.html" %}
-    {%include "_about.html" %}
-    {%include "_projects.html" %}
-    {%include "_contact.html" %}
+    <section id="hero">{% include "_hero.html" %}</section>
+    <section id="about">{% include "_about.html" %}</section>
+    <section id="projects">{% include "_projects.html" %}</section>
+    <section id="contact">{% include "_contact.html" %}</section>
 {% endblock %}

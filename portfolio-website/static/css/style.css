@@ -10,6 +10,7 @@
 /* Global Styling */
 body {
     background-color: black;
+    margin: 0 2rem;
 }
 
 html {
@@ -30,25 +31,47 @@ header {
     justify-content: space-between;
     padding: 0.5rem 1rem;
 }
+
 nav a, nav p {
     text-decoration: none;
     color: hotpink;
-    /* font-weight: 500; */
     margin: 0 0.5rem;
 }
+
 .nav-right ul {
     display: flex;
-    list-style: none;      /* removes bullets */
+    list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem;             /* spacing between items */
+    gap: 1rem; 
 }
+
 .nav-left p {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 1rem;             /* spacing between items */
+    gap: 1rem;
 }
 
 /* Hero Styling */
+#hero {
+    margin-bottom: 23rem;
+}
 
+#hero-title {
+    font-size: 4rem;
+    /* line-height: 1.2; */
+    margin: 3rem 7rem;
+}
+
+#hero-subtitle {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* About Me Styling */
+#about {
+    margin-bottom: 23rem;
+}
