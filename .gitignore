@@ -10,3 +10,4 @@ placeholder.*
 # ignore unused fonts
 *woff2
 !JetBrainsMono-Regular.woff2
+!JetBrainsMono-Bold.woff2

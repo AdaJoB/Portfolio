@@ -6,6 +6,13 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("/static/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Global Styling */
 body {
@@ -29,28 +36,29 @@ p {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 1rem;
 }
 
-nav a, nav p {
-    text-decoration: none;
+.nav-left p {
+    font-weight: bold;
     color: hotpink;
-    margin: 0 0.5rem;
 }
 
 .nav-right ul {
     display: flex;
+    gap: 1rem;        
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem; 
 }
 
-.nav-left p {
-    display: flex;
+.nav-right a,
+.nav-right p {
     margin: 0;
-    padding: 0;
-    gap: 1rem;
+    text-decoration: none;
+    color: hotpink;
+    font-size: 0.95rem;
 }
 
 /* Hero Styling */
