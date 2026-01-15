@@ -45,6 +45,10 @@ header {
     color: hotpink;
 }
 
+.nav-left p:hover {
+    color: white;
+}
+
 .nav-right ul {
     display: flex;
     gap: 1rem;        
@@ -53,12 +57,15 @@ header {
     padding: 0;
 }
 
-.nav-right a,
-.nav-right p {
+.nav-right a {
     margin: 0;
     text-decoration: none;
     color: hotpink;
     font-size: 0.95rem;
+}
+
+.nav-right a:hover {
+    color: white;
 }
 
 /* Hero Styling */
@@ -82,4 +89,29 @@ header {
 /* About Me Styling */
 #about {
     margin-bottom: 23rem;
+}
+
+/* Box */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box-item {
+    flex: 1 1 250px;
+    background: black;
+    border: 5px solid hotpink;
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.box-item:hover {
+    border: 5px solid white;
+    transform: translateY(-4px);
 }
