@@ -32,8 +32,16 @@ p {
     color: white;
 }
 
+/* Section Spacing */
+section {
+    min-height: 100vh;
+}
+
 /* Navigation */
 header {
+    position: sticky;
+    top: 0;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,10 +77,6 @@ header {
 }
 
 /* Hero Styling */
-#hero {
-    margin-bottom: 23rem;
-}
-
 #hero-title {
     font-size: 4rem;
     /* line-height: 1.2; */
@@ -84,11 +88,6 @@ header {
     font-size: 2rem;
     text-align: center;
     margin-top: 5rem;
-}
-
-/* About Me Styling */
-#about {
-    margin-bottom: 23rem;
 }
 
 /* Box */
