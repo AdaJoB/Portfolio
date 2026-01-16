@@ -34,5 +34,8 @@
     <!--sections displayed from index.html-->
     <main>{% block content %}{% endblock %}</main>
 
+    <!--javascript integration-->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 </body>
 </html>

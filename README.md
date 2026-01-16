@@ -9,7 +9,13 @@
 
 ### HTML CSS Foundation
  - [x] Create a wireframe and design
- - [x] Create a base.html
- - [x] Finish more static pages
- - [x] Create global CSS
- - [ ] Finish global CSS
+ - [x] Create a `base.html`
+ - [x] Create a `style.css`
+ - [x] Finish `style.css`
+
+### JavaScript Implementation
+ - [x] Create a `main.js` file
+ - [ ] Create themes
+ - [ ] Implement smooth scrolling
+ - [ ] Implement typing effect for hero
+ - [ ] Implement fade effect for headers
