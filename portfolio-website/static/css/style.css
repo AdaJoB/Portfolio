@@ -14,9 +14,28 @@
     font-display: swap;
 }
 
+/* Color Variables */
+:root {
+    --background-color: black;
+    --accent-1: hotpink;
+    --accent-2: white;
+}
+
+:root.light {
+    --background-color: white;
+    --accent-1: hotpink;
+    --accent-2: black;
+}
+
+:root.proton {
+    --background-color: #16141c;
+    --accent-1: #6d4aff;
+    --accent-2: white;
+}
+
 /* Global Styling */
 body {
-    background-color: black;
+    background-color: var(--background-color);
     margin: 0 2rem;
 }
 
@@ -25,11 +44,11 @@ html {
 }
 
 h1, h2, h3 {
-    color: hotpink;
+    color: var(--accent-1);
 }
 
 p {
-    color: white;
+    color: var(--accent-2);
 }
 
 /* Section Spacing */
@@ -41,7 +60,7 @@ section {
 header {
     position: sticky;
     top: 0;
-    background-color: black;
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,11 +69,11 @@ header {
 
 .nav-left p {
     font-weight: bold;
-    color: hotpink;
+    color: var(--accent-1);
 }
 
 .nav-left p:hover {
-    color: white;
+    color: var(--accent-2);
 }
 
 .nav-right ul {
@@ -68,12 +87,22 @@ header {
 .nav-right a {
     margin: 0;
     text-decoration: none;
-    color: hotpink;
+    color: var(--accent-1);
     font-size: 0.95rem;
 }
 
-.nav-right a:hover {
-    color: white;
+.nav-right button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--accent-1);
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: "JetBrainsMono", sans-serif;
+}
+
+.nav-right a:hover, .nav-right button:hover {
+    color: var(--accent-2);
 }
 
 /* Hero Styling */
@@ -84,7 +113,7 @@ header {
 }
 
 #hero-subtitle {
-    color: white;
+    color: var(--accent-2);
     font-size: 2rem;
     text-align: center;
     margin-top: 5rem;
@@ -102,8 +131,8 @@ header {
 
 .box-item {
     flex: 1 1 250px;
-    background: black;
-    border: 5px solid hotpink;
+    background: var(--background-color);
+    border: 5px solid var(--accent-1);
     border-radius: 10px;
     padding: 1rem;
     text-decoration: none;
@@ -111,6 +140,6 @@ header {
 }
 
 .box-item:hover {
-    border: 5px solid white;
+    border: 5px solid var(--accent-2);
     transform: translateY(-4px);
 }
