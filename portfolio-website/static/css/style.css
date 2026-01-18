@@ -17,13 +17,13 @@
 /* Color Variables */
 :root {
     --background-color: black;
-    --accent-1: hotpink;
+    --accent-1: #e54980;
     --accent-2: white;
 }
 
 :root.light {
     --background-color: white;
-    --accent-1: hotpink;
+    --accent-1: #e54980;
     --accent-2: black;
 }
 
@@ -31,6 +31,18 @@
     --background-color: #16141c;
     --accent-1: #6d4aff;
     --accent-2: white;
+}
+
+:root.forest {
+    --background-color: darkgreen;
+    --accent-1: rgb(189, 130, 11);
+    --accent-2: lightgreen;
+}
+
+:root.portal {
+    --background-color: #d4d7dc;
+    --accent-1: #02b3fb;
+    --accent-2: #fe7f00;
 }
 
 /* Global Styling */
