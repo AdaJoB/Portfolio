@@ -45,6 +45,12 @@
     --accent-2: #fe7f00;
 }
 
+:root.twin-peaks {
+    --background-color: #5a2e27;
+    --accent-1: #71d552;
+    --accent-2: #1ab7bc;
+}
+
 /* Global Styling */
 body {
     background-color: var(--background-color);

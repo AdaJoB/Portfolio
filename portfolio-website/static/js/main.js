@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // theme toggle
     const themeToggle = document.getElementById('theme-toggle');
-    const themes = ['light', 'proton', 'forest', 'portal', null];
+    const themes = ['light', 'proton', 'forest', 'portal', 'twin-peaks', null];
     let themeNum = 0;
     themeToggle.addEventListener('click', () => {
+        console.log(themes[themeNum]);
         document.documentElement.classList.remove(...themes);
         document.documentElement.classList.add(themes[themeNum]);
         themeNum = (themeNum + 1) % themes.length;
