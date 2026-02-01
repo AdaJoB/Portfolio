@@ -45,7 +45,7 @@
     --accent-2: #fe7f00;
 }
 
-:root.twin-peaks {
+:root.peaks {
     --background-color: #5a2e27;
     --accent-1: #71d552;
     --accent-2: #1ab7bc;
@@ -83,6 +83,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
+    z-index: 1000;
 }
 
 .nav-left p {
@@ -158,6 +159,87 @@ header {
 }
 
 .box-item:hover {
-    border: 5px solid var(--accent-2);
+    border-color: var(--accent-2);
+    transform: translateY(-4px);
+}
+
+/* theme dropdown box */
+#theme-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 5px solid var(--accent-1);
+    border-radius: 10px;
+    background: var(--background-color);
+    margin: 0rem;
+    padding: 1rem;
+    width: 20rem;
+}
+
+#theme-selector button {
+    flex: 1 1 50px;
+    border: 1px solid var(--accent-1);
+    border-radius: 5px;
+    background: none;
+    margin: 0rem;
+    padding: 1rem;
+    color: var(--accent-1);
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: "JetBrainsMono", sans-serif;
+}
+
+#theme-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+#theme-dropdown.open {
+    display: block;
+}
+
+/* theme buttons coloring */
+#default-button:hover {
+    background: black;
+    border-color: #e54980;
+    color: white;
+    transform: translateY(-4px);
+}
+
+#light-button:hover {
+    background: white;
+    border-color: #e54980;
+    color: black;
+    transform: translateY(-4px);
+}
+
+#proton-button:hover {
+    background: #16141c;
+    border-color: #6d4aff;
+    color: white;
+    transform: translateY(-4px);
+}
+
+#forest-button:hover {
+    background: darkgreen;
+    border-color: rgb(189, 130, 11);
+    color: lightgreen;
+    transform: translateY(-4px);
+}
+
+#portal-button:hover {
+    background: #d4d7dc;
+    border-color: #02b3fb;
+    color: #fe7f00;
+    transform: translateY(-4px);
+}
+
+#peaks-button:hover {
+    background: #5a2e27;
+    border-color: #71d552;
+    color: #1ab7bc;
     transform: translateY(-4px);
 }

@@ -15,7 +15,8 @@
 
 ### JavaScript Implementation
  - [x] Create a `main.js` file
- - [ ] Create themes
+ - [x] Create themes
+ - [x] Create theme selector
  - [ ] Implement smooth scrolling
  - [ ] Implement typing effect for hero
  - [ ] Implement fade effect for headers
