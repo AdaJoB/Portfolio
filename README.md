@@ -18,5 +18,6 @@
  - [x] Create themes
  - [x] Create theme selector
  - [x] Implement smooth scrolling
- - [ ] Implement typing effect for hero
- - [ ] Implement fade effect for headers
+ - [x] Implement typewriter effect for hero
+ - [ ] Implement typewriter effect for headers
+ - [ ] Implement fade effect for for secondary text

@@ -128,7 +128,8 @@ header {
 #hero-title {
     font-size: 4rem;
     /* line-height: 1.2; */
-    margin: 3rem 7rem;
+    margin: 0rem 7rem;
+    white-space: pre-line;
 }
 
 #hero-subtitle {
@@ -242,4 +243,20 @@ header {
     border-color: #71d552;
     color: #1ab7bc;
     transform: translateY(-4px);
+}
+
+/* typewriter cursor blink */
+.cursor {
+    display: inline-block;
+    animation: blink 1.25s steps(2, start) infinite;
+    animation-delay: 5s;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
 }

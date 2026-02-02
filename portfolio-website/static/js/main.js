@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----smooth scrolling----
-    
     // hero
     const goTop = document.getElementById('go-top');
     goTop.addEventListener('click', () => {
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const goAbout = document.getElementById('go-about');
     goAbout.addEventListener('click', () => {
         window.scrollTo({
-            top: 850,
+            top: 800,
             left: 0,
             behavior: 'smooth'
         });
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const goProjects = document.getElementById('go-projects');
     goProjects.addEventListener('click', () => {
         window.scrollTo({
-            top: 1650,
+            top: 1600,
             left: 0,
             behavior: 'smooth'
         });
@@ -57,9 +56,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const goContact = document.getElementById('go-contact');
     goContact.addEventListener('click', () => {
         window.scrollTo({
-            top: 2450,
+            top: 2400,
             left: 0,
             behavior: 'smooth'
         });
     });
+
+    // ----typewriter effect----
+    function typewriter(textId, text) {
+        let textElement = document.getElementById(textId);
+        let i = 0;
+        addChar(textElement, text, i);
+    }
+
+    function addChar(textElement, text, i) {
+        textElement.textContent += text.charAt(i);
+        i++;
+
+        if (i < text.length) {
+            setTimeout(() => addChar(textElement, text, i), 100);
+        }
+    }
+
+    // hero
+    const heroId = 'hero-text';
+    const heroText = 'Hello!\n' +
+                     'I\'m Ada Boddicker.\n' +
+                     'Welcome to my website.';
+
+    typewriter(heroId, heroText);
 });
