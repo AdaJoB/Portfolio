@@ -17,6 +17,6 @@
  - [x] Create a `main.js` file
  - [x] Create themes
  - [x] Create theme selector
- - [ ] Implement smooth scrolling
+ - [x] Implement smooth scrolling
  - [ ] Implement typing effect for hero
  - [ ] Implement fade effect for headers
