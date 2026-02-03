@@ -63,8 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----typewriter effect----
-    function typewriter(textId, text) {
-        let textElement = document.getElementById(textId);
+    function typewriter(textElement, text) {
         let i = 0;
         addChar(textElement, text, i);
     }
@@ -78,11 +77,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // observer for typewriter effect on headers
+    function typewriterObserve(textElement, text) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    typewriter(textElement, text);
+                    obs.unobserve(entry.target)
+                }
+            })
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+        observer.observe(textElement);
+    }
+    
     // hero
-    const heroId = 'hero-text';
+    const heroElement = document.getElementById('hero-text');
     const heroText = 'Hello!\n' +
                      'I\'m Ada Boddicker.\n' +
                      'Welcome to my website.';
 
-    typewriter(heroId, heroText);
+    typewriterObserve(heroElement, heroText);
+
+    // about me
+    const aboutElement = document.getElementById('about-text');
+    const aboutText = 'About Me';
+    typewriterObserve(aboutElement, aboutText);
+
+    // my projects
+    const projectsElement = document.getElementById('projects-text');
+    const projectsText = 'My Projects';
+    typewriterObserve(projectsElement, projectsText);
+
+    // contact me
+    const contactElement = document.getElementById('contact-text');
+    const contactText = 'Contact Me';
+    typewriterObserve(contactElement, contactText);
 });
