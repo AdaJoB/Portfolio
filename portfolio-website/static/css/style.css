@@ -125,7 +125,7 @@ header {
 }
 
 /* Hero Styling */
-#hero-title {
+#hero-text {
     font-size: 4rem;
     /* line-height: 1.2; */
     margin: 0rem 7rem;
@@ -248,8 +248,11 @@ header {
 /* typewriter cursor blink */
 .cursor {
     display: inline-block;
+    animation: none;
+}
+
+.cursor.blink {
     animation: blink 1.25s steps(2, start) infinite;
-    animation-delay: 5s;
 }
 
 @keyframes blink {

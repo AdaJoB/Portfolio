@@ -63,35 +63,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----typewriter effect----
-    function typewriter(textElement, text) {
+    function typewriter(textElement, cursorElement, text, speed) {
         let i = 0;
-        addChar(textElement, text, i);
-    }
 
-    function addChar(textElement, text, i) {
-        textElement.textContent += text.charAt(i);
-        i++;
+        function addChar() {
+            textElement.textContent += text.charAt(i);
+            i++;
 
-        if (i < text.length) {
-            setTimeout(() => addChar(textElement, text, i), 100);
+            if (i < text.length) {
+                setTimeout(addChar, speed);
+            }
+            else {
+                cursorElement.classList.add('blink');
+            }
         }
+        addChar();
     }
 
     // observer for typewriter effect on headers
-    function typewriterObserve(textElement, text) {
+    function typewriterObserve(containerElement, text, speed) {
+        const textElement = containerElement.querySelector('.typewrite');
+        const cursorElement = containerElement.querySelector('.cursor');
+
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    typewriter(textElement, text);
+                    typewriter(textElement, cursorElement, text, speed);
                     obs.unobserve(entry.target)
-                }
+                }   
             })
         }, {
             root: null,
             rootMargin: '0px',
             threshold: 0.1
         });
-        observer.observe(textElement);
+        observer.observe(containerElement);
     }
     
     // hero
@@ -100,20 +106,20 @@ document.addEventListener('DOMContentLoaded', () => {
                      'I\'m Ada Boddicker.\n' +
                      'Welcome to my website.';
 
-    typewriterObserve(heroElement, heroText);
+    typewriterObserve(heroElement, heroText, 75);
 
     // about me
     const aboutElement = document.getElementById('about-text');
     const aboutText = 'About Me';
-    typewriterObserve(aboutElement, aboutText);
+    typewriterObserve(aboutElement, aboutText, 100);
 
     // my projects
     const projectsElement = document.getElementById('projects-text');
     const projectsText = 'My Projects';
-    typewriterObserve(projectsElement, projectsText);
+    typewriterObserve(projectsElement, projectsText, 100);
 
     // contact me
     const contactElement = document.getElementById('contact-text');
     const contactText = 'Contact Me';
-    typewriterObserve(contactElement, contactText);
+    typewriterObserve(contactElement, contactText, 100);
 });
