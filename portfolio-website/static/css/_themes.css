@@ -1,0 +1,35 @@
+:root {
+    --background-color: black;
+    --accent-1: #e54980;
+    --accent-2: white;
+}
+
+:root.light {
+    --background-color: white;
+    --accent-1: #e54980;
+    --accent-2: black;
+}
+
+:root.proton {
+    --background-color: #16141c;
+    --accent-1: #6d4aff;
+    --accent-2: white;
+}
+
+:root.forest {
+    --background-color: darkgreen;
+    --accent-1: rgb(189, 130, 11);
+    --accent-2: lightgreen;
+}
+
+:root.portal {
+    --background-color: #d4d7dc;
+    --accent-1: #02b3fb;
+    --accent-2: #fe7f00;
+}
+
+:root.peaks {
+    --background-color: #5a2e27;
+    --accent-1: #71d552;
+    --accent-2: #1ab7bc;
+}

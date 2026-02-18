@@ -1,0 +1,16 @@
+body {
+    background-color: var(--background-color);
+    margin: 0 2rem;
+}
+
+html {
+    font-family: "JetBrainsMono", sans-serif;
+}
+
+h1, h2, h3 {
+    color: var(--accent-1);
+}
+
+p {
+    color: var(--accent-2);
+}

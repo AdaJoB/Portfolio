@@ -1,0 +1,48 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+
+.nav-left p {
+    font-weight: bold;
+    color: var(--accent-1);
+}
+
+.nav-left p:hover {
+    color: var(--accent-2);
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right a {
+    margin: 0;
+    text-decoration: none;
+    color: var(--accent-1);
+    font-size: 0.95rem;
+}
+
+.nav-right button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--accent-1);
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: "JetBrainsMono", sans-serif;
+}
+
+.nav-right a:hover, .nav-right button:hover {
+    color: var(--accent-2);
+}

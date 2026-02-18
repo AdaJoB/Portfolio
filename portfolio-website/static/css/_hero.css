@@ -1,0 +1,13 @@
+#hero-text {
+font-size: 4rem;
+/* line-height: 1.2; */
+margin: 5rem 7rem;
+white-space: pre-line;
+}
+
+#hero-subtitle {
+color: var(--accent-2);
+font-size: 2rem;
+text-align: center;
+margin-top: 5rem;
+}
