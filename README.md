@@ -20,4 +20,4 @@
  - [x] Implement smooth scrolling
  - [x] Implement typewriter effect for hero
  - [x] Implement typewriter effect for headers
- - [ ] Implement fade effect for for secondary text
+ - [x] Implement fade effect for for secondary text

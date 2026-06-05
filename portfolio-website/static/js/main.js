@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('JavaScript Loaded');
 
-    // ----theme button and dropdown functionality----
+    // ==== theme button and dropdown functionality ==== //
     const themeToggle = document.getElementById('theme-button');
     const themeDropdown = document.getElementById('theme-dropdown');
     const themeButtons = document.querySelectorAll('#theme-selector button');
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ----smooth scrolling----
+    // ==== Smooth Scrolling ==== //
     // hero
     const goTop = document.getElementById('go-top');
     goTop.addEventListener('click', () => {
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ----typewriter effect----
+    // ==== Typewriter Effect ==== //
     function typewriter(textElement, cursorElement, text, speed) {
         let i = 0;
 
@@ -142,4 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactElement = document.getElementById('contact-text');
     const contactText = 'Contact Me';
     typewriterObserve(contactElement, contactText, 100);
+
+    // ==== Secondary Text Hero Fade ==== //
+
+    // TODO - create observer & variable delay when needed
+    setTimeout(() => {
+        const elements = document.getElementsByClassName('fade');
+        
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.add('visible');
+        }
+    }, 3750);
 });
