@@ -11,3 +11,6 @@ placeholder.*
 *woff2
 !JetBrainsMono-Regular.woff2
 !JetBrainsMono-Bold.woff2
+
+# ignore sql folder
+sql/

@@ -1,0 +1,38 @@
+erDiagram
+
+    %% ==== Tables ==== %%
+
+    %% main tables
+    TITLE {
+        NUMBER title_id PK
+        VARCHAR title
+    }
+
+    TAG {
+        NUMBER tag_id PK
+        VARCHAR tag
+    }
+
+    POST {
+        NUMBER post_id PK
+        VARCHAR body
+        DATE post_date
+        NUMBER title_id FK
+        NUMBER post_id FK
+    }
+
+    %% bridge tables
+    POST_TAGS {
+        NUMBER tag_id FK
+        NUMBER post_id FK 
+    }
+
+    %% ==== Relationships ==== %%
+
+    TITLE ||--|| POST : titled
+
+    TAG ||--|{ POST_TAGS : created_tag
+
+    POST ||--|{ POST_TAGS : in_post
+
+

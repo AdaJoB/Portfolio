@@ -21,3 +21,15 @@
  - [x] Implement typewriter effect for hero
  - [x] Implement typewriter effect for headers
  - [x] Implement fade effect for for secondary text
+
+### Database Development
+- [x] Create ER diagram
+
+### Backend Development
+
+### Finishing Touches
+
+### Deployment
+
+
+
