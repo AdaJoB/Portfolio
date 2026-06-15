@@ -1,3 +1,7 @@
+.dropdown {
+    position: relative;
+}
+
 #theme-selector {
     display: flex;
     flex-wrap: wrap;
@@ -23,12 +27,14 @@
     font-family: "JetBrainsMono", sans-serif;
 }
 
+/* keep proper positioning of theme menu */
 #theme-dropdown {
     position: absolute;
-    top: 100%;
-    left: 48%;
-    margin-top: 0.5rem;
+    top: calc(100% + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
+    z-index: 1000;
 }
 
 #theme-dropdown.open {
