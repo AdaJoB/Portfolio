@@ -14,9 +14,10 @@ const SmoothScroll = (() => {
 
         // about me
         const goAbout = document.getElementById('go-about');
+        const elementAbout = document.getElementById('about-text');
         goAbout.addEventListener('click', () => {
             window.scrollTo({
-                top: 800,
+                top: elementAbout.offsetTop-75,
                 left: 0,
                 behavior: 'smooth'
             });
@@ -24,9 +25,10 @@ const SmoothScroll = (() => {
 
         // projects
         const goProjects = document.getElementById('go-projects');
+        const elementProjects = document.getElementById('projects-text');
         goProjects.addEventListener('click', () => {
             window.scrollTo({
-                top: 1600,
+                top: elementProjects.offsetTop-75,
                 left: 0,
                 behavior: 'smooth'
             });
@@ -34,9 +36,21 @@ const SmoothScroll = (() => {
 
         // contact
         const goContact = document.getElementById('go-contact');
+        const elementContact = document.getElementById('contact-text');
         goContact.addEventListener('click', () => {
             window.scrollTo({
-                top: 2400,
+                top: elementContact.offsetTop-75,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // blog
+        const goBlog = document.getElementById('go-blog');
+        const elementblog = document.getElementById('blog-text');
+        goBlog.addEventListener('click', () => {
+            window.scrollTo({
+                top: elementblog.offsetTop-75,
                 left: 0,
                 behavior: 'smooth'
             });

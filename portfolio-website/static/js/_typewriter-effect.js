@@ -61,6 +61,11 @@ const TypewriterEffect = (() => {
         const contactElement = document.getElementById('contact-text');
         const contactText = 'Contact Me';
         typewriterObserve(contactElement, contactText, 100);
+
+        // my blog
+        const blogElement = document.getElementById('blog-text');
+        const blogText = 'My Blog';
+        typewriterObserve(blogElement, blogText, 100);
         
     };
 
