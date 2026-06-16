@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', () => {
     ThemeManager.init();
     SmoothScroll.init();
     TypewriterEffect.init();
-    FaseEffect.init();
+    FadeEffect.init();
 });
