@@ -23,13 +23,14 @@
  - [x] Implement fade effect for for secondary text
 
 ### Database Development
-- [x] Create ER diagram
+ - [x] Create ER diagram
+ - [x] Create SQLite database and schemas
+ - [X] Fill tables with mock data for testing
+ - [X] Make queries to test data and tables
+
 
 ### Backend Development
 
 ### Finishing Touches
 
 ### Deployment
-
-
-

@@ -1,0 +1,15 @@
+insert into tag (tag_id, tag) values (1, 'Blue');
+insert into tag (tag_id, tag) values (2, 'Orange');
+insert into tag (tag_id, tag) values (3, 'Fuscia');
+insert into tag (tag_id, tag) values (4, 'Red');
+insert into tag (tag_id, tag) values (5, 'Red');
+insert into tag (tag_id, tag) values (6, 'Mauv');
+insert into tag (tag_id, tag) values (7, 'Puce');
+insert into tag (tag_id, tag) values (8, 'Yellow');
+insert into tag (tag_id, tag) values (9, 'Aquamarine');
+insert into tag (tag_id, tag) values (10, 'Mauv');
+insert into tag (tag_id, tag) values (11, 'Violet');
+insert into tag (tag_id, tag) values (12, 'Blue');
+insert into tag (tag_id, tag) values (13, 'Turquoise');
+insert into tag (tag_id, tag) values (14, 'Yellow');
+insert into tag (tag_id, tag) values (15, 'Maroon');

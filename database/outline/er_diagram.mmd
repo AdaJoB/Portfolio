@@ -18,7 +18,11 @@ erDiagram
         VARCHAR body
         DATE post_date
         NUMBER title_id FK
-        NUMBER post_id FK
+    }
+
+    USER {
+        NUMBER user_id PK
+        VARCHAR user_name
     }
 
     %% bridge tables
