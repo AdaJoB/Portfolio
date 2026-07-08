@@ -5,17 +5,11 @@ CREATE TABLE tag (
     tag TEXT
 );
 
-CREATE TABLE title (
-    title_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    title TEXT
-);
-
 CREATE TABLE post (
     post_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
     body TEXT,
-    post_date TEXT,
-    title_id INTEGER,
-        FOREIGN KEY (title_id) REFERENCES title(title_id)
+    date TEXT
 );
 
 CREATE TABLE user (
@@ -26,7 +20,7 @@ CREATE TABLE user (
 --==== MANY-TO-MANY TABLES ====--
 
 -- relationship between post and tag tables
-CREATE TABLE post_tags (
+CREATE TABLE post_tag (
     post_id INTEGER,
     tag_id INTEGER,
     PRIMARY KEY (tag_id, post_id),

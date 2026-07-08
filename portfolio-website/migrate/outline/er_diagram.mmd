@@ -3,37 +3,30 @@ erDiagram
     %% ==== Tables ==== %%
 
     %% main tables
-    TITLE {
-        NUMBER title_id PK
-        VARCHAR title
+    POST {
+        INTEGER post_id PK
+        TEXT title
+        TEXT body
+        TEXT date
     }
 
     TAG {
-        NUMBER tag_id PK
-        VARCHAR tag
-    }
-
-    POST {
-        NUMBER post_id PK
-        VARCHAR body
-        DATE post_date
-        NUMBER title_id FK
+        INTEGER tag_id PK
+        TEXT tag
     }
 
     USER {
-        NUMBER user_id PK
-        VARCHAR user_name
+        INTEGER user_id PK
+        TEXT user_name
     }
 
     %% bridge tables
-    POST_TAGS {
-        NUMBER tag_id FK
-        NUMBER post_id FK
+    POST_TAG {
+        TEXT tag_id FK
+        TEXT post_id FK
     }
 
     %% ==== Relationships ==== %%
-
-    TITLE ||--|| POST : titled
 
     TAG ||--|{ POST_TAGS : created_tag
 

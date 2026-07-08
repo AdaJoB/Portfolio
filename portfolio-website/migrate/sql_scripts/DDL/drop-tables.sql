@@ -1,5 +1,4 @@
 DROP TABLE post_tags;
 DROP TABLE post;
 DROP TABLE tag;
-DROP TABLE title;
 DROP TABLE user;
