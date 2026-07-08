@@ -1,0 +1,9 @@
+{% extends "base.jinja" %}
+
+{% block header %}
+    {% include "blog/_header.html" %}
+{% endblock %}
+
+{% block main %}
+    <section id="body">{% include "blog/_posts.jinja" %}</section>
+{% endblock %}
