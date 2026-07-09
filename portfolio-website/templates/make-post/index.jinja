@@ -1,0 +1,9 @@
+{% extends "base.jinja" %}
+
+{% block header %}
+    {% include "make-post/_header.html" %}
+{% endblock %}
+
+{% block main %}
+    <section id="body">{% include "make-post/_create-post.html" %}</section>
+{% endblock %}

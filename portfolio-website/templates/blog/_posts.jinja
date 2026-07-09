@@ -2,11 +2,11 @@
 
 <div class="box">
 
-    {% for blog_post in title %}
+    {% for e in post %}
     <a href="https://www.startpage.com/" class="box-item">
-        <h3>{{ blog_post.title }}</h3>
-        <p> empty </p>
-        <p> empty </p>
+        <h3>{{ e.title }}</h3>
+        <p>tags</p>
+        <p>{{ e.date }}</p>
     </a>
     {% endfor %}
     
