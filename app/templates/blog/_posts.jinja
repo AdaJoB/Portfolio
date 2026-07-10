@@ -2,12 +2,16 @@
 
 <div class="box">
 
-    {% for e in post %}
-    <a href="https://www.startpage.com/" class="box-item">
-        <h3>{{ e.title }}</h3>
-        <p>tags</p>
-        <p>{{ e.date }}</p>
-    </a>
+    {% for post in posts %}
+        <a href="https://www.startpage.com/" class="box-item">
+            <h3>{{ post.title }}</h3>
+
+            {% if post.tags %}
+                <p>{{ post.tags | map(attribute='tag') | join(', ') }}</p>
+            {% endif %}
+
+            <p>{{ post.date }}</p>
+        </a>
     {% endfor %}
     
 </div>

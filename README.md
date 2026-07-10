@@ -29,8 +29,15 @@
  - [X] Make queries to test data and tables
 
 
-### Backend Development
+### Backend Creation
+ - [x] Set up routing for blog and posts pages
+ - [x] Create `model.py`
+ - [x] Have `_posts.jinja` list title, tags, and date of post
+ - [x] Create posting function with title, tags, and date
+ - [ ] Be able to view post in separate page
+ - [ ] Create Yubikey functionality
 
 ### Finishing Touches
+ - [ ] Style create-post page
 
 ### Deployment

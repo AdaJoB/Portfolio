@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from ..models.post import BlogPost
+from ..models.model import Post, Tag
 from .. import db
 
 public = Blueprint("public", __name__)
@@ -10,13 +10,13 @@ def home():
 
 @public.route("/blog")
 def blog():
-    post = BlogPost.query.all()
-    return render_template("blog/index.jinja", post=post)
+    posts = Post.query.all()
+    return render_template("blog/index.jinja", posts=posts)
 
 @public.route("/make-post", methods=["GET", "POST"])
 def make_post():
     if request.method == "POST":
-        post = BlogPost(
+        post = Post(
             title=request.form["post-title"],
             body=request.form["post-body"],
             date=request.form["post-date"]
