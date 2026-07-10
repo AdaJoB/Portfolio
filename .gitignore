@@ -1,6 +1,9 @@
 # ignore python virtual environment
 .venv/
 
+# ignore python cache
+__pycache__/
+
 # ignore drawio files
 *.drawio
 
