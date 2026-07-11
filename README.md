@@ -34,7 +34,7 @@
  - [x] Create `model.py`
  - [x] Have `_posts.jinja` list title, tags, and date of post
  - [x] Create posting function with title, tags, and date
- - [ ] Be able to view post in separate page
+ - [x] Be able to view post in separate page
  - [ ] Create Yubikey functionality
 
 ### Finishing Touches

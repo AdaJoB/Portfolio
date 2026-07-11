@@ -1,1 +1,1 @@
-DELETE FROM post WHERE post_id >= 102;
+DELETE FROM post WHERE post_id >= 100;

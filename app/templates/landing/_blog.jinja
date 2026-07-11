@@ -1,8 +1,9 @@
-<h2>Blog Posts</h2>
+<!--javascript typewriter text-->
+<h2 id="blog-text"><span class="typewrite"></span><span class="cursor">▌</span></h2>
 
 <div class="box">
 
-    {% for post in posts %}
+    {% for post in posts[:5] %}
         <a href="{{ url_for('public.post', post_id=post.post_id) }}" class="box-item">
             <h3>{{ post.title }}</h3>
 
@@ -13,5 +14,7 @@
             <p>{{ post.date }}</p>
         </a>
     {% endfor %}
+
+    <a href="{{ url_for('public.blog') }}" >More Posts</a>
     
 </div>

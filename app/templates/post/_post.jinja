@@ -1,0 +1,9 @@
+<h1>{{ post.title }}</h1>
+
+{% if post.tags %}
+    <p>{{ post.tags | map(attribute='tag') | join(', ') }}</p>
+{% endif %}
+
+<p>{{ post.body }}</p>
+
+<h2>{{ post.date }}</h2>
