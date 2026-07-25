@@ -36,7 +36,7 @@ class Tag(db.Model):
     __tablename__ = "tag"
 
     tag_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    tag = db.Column(db.Text, nullable=False)
+    tag = db.Column(db.Text, unique=True, nullable=False)
 
     posts = db.relationship("Post", secondary=post_tag, back_populates="tags")
 

@@ -2,7 +2,7 @@
 
 CREATE TABLE tag (
     tag_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    tag TEXT
+    tag TEXT UNIQUE
 );
 
 CREATE TABLE post (

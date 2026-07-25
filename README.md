@@ -35,6 +35,7 @@
  - [x] Have `_posts.jinja` list title, tags, and date of post
  - [x] Create posting function with title, tags, and date
  - [x] Be able to view post in separate page
+ - [x] Create tagging system
  - [ ] Create Yubikey functionality
 
 ### Finishing Touches
