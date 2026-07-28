@@ -20,3 +20,6 @@ placeholder.*
 
 # ignore pdf files
 *.pdf
+
+# ignore vscode config
+.vscode
