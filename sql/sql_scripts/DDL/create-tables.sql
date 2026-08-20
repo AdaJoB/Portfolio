@@ -12,9 +12,11 @@ CREATE TABLE post (
     date TEXT
 );
 
-CREATE TABLE user (
+CREATE TABLE credentials (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_name TEXT
+    credential_id BLOB NOT NULL UNIQUE,
+    public_key BLOB NOT NULL,
+    login_count INTEGER NOT NULL DEFAULT 0
 );
 
 --==== MANY-TO-MANY TABLES ====--

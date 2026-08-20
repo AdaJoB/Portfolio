@@ -23,3 +23,9 @@ placeholder.*
 
 # ignore vscode config
 .vscode
+
+# ignore temp files
+temp.*
+
+# ignore sql session
+*.session.sql

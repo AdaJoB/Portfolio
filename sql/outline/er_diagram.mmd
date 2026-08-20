@@ -15,9 +15,11 @@ erDiagram
         TEXT tag
     }
 
-    USER {
+    CREDENTIALS {
         INTEGER user_id PK
-        TEXT user_name
+        BLOB credential_id
+        BLOB public_key
+        INTEGER login_count
     }
 
     %% bridge tables
