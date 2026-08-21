@@ -36,9 +36,12 @@
  - [x] Create posting function with title, tags, and date
  - [x] Be able to view post in separate page
  - [x] Create tagging system
+ - [ ] Use markdown syntax for blog posts
  - [ ] Create Yubikey functionality
 
 ### Finishing Touches
  - [ ] Style create-post page
 
 ### Deployment
+
+

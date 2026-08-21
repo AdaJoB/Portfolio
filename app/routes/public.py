@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from ..models.model import Post, Tag
 from .. import db
+import datetime
 
 
 public = Blueprint("public", __name__)
@@ -25,11 +26,15 @@ def blog():
 def make_post():
     if request.method == "POST":
 
+        # get date
+        date = datetime.datetime.now()
+        formatted_date = f"{date.strftime("%b")} {date.strftime("%d")}, {date.strftime("%Y")}"
+
         # create new post
         new_post = Post(
             title=request.form["post-title"],
             body=request.form["post-body"],
-            date=request.form["post-date"]
+            date=formatted_date
         )
         db.session.add(new_post)
 

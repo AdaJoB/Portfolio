@@ -4,6 +4,6 @@
     <p>{{ post.tags | map(attribute='tag') | join(', ') }}</p>
 {% endif %}
 
-<p>{{ post.body }}</p>
+<p>{{ post.body | markdown | safe }}</p>
 
 <h2>{{ post.date }}</h2>
